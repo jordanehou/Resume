@@ -1,0 +1,109 @@
+.block-resume{
+    margin-top: 85px;
+}
+.resume-main-title{
+    text-align: center;
+}
+.res-main{
+    margin-left: auto;
+    margin-right: auto;
+    top: 170px;
+    right: 70px;
+    left: 30px;
+    position: absolute;
+    height: auto ;
+    width: 80%;
+    border: 3px solid black;
+}
+
+.res-left{
+    float: left;
+    width: 20%;
+    height: 100%;
+    /*background-color: rgba(36, 202, 228, 0.938);
+    background-color: rgba(127, 255, 212, 0.473); #54595F17 
+
+    background-color: #1e4e7080;*/
+    background-color: #dcdfe5;
+    /*begin let an empty div fill height*/
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    position: absolute;
+}
+.res-right{
+    float: right;
+    width: 80%;
+    height: auto;
+    background-color: #f8f8f8;
+    
+    top: 0px;
+    right: 0px;
+    padding: 20px;
+    position: relative;
+}
+
+.block_title{
+    color: #1e4e70;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+.block_contact_info{
+    color: black;
+    font-size: 13px;
+    height: 150px;
+
+
+}
+
+.block_skill {
+    color: black;
+}
+
+.block_skill_info{
+    height: 100%;
+}
+
+/* begin right part*/
+
+.block_name{
+    font-size: 40px;
+}
+
+.block_sum_info{
+    margin-top: 10px;
+    color: black;
+}
+
+/*Job && Experience*/
+.block_job_part{
+    background-color: bisque;
+    width: 100%;
+}
+.block_job_left{
+    float: left;
+    color: black;
+
+}
+.block_job_right{
+    float: right;
+    color: black
+}
+.block_job_exp{
+    color: black;
+    margin-top: 60px;
+}
+
+/*Education*/
+.block_educ{
+    color:black;
+}
+
+.block_educ_left{
+    float: left;
+}
+.block_educ_right{
+    float: right;
+}

@@ -1,0 +1,63 @@
+.main-form-text{
+    margin-top: 200px;
+}
+
+.form-text{
+    color: #1E4E70;
+    font-weight: bold;
+}
+
+
+.form-header{
+    text-align: left;
+}
+.form-header>h2{
+    font-size: 50px
+}
+.around{
+    border: none;
+    margin-top: 50px;
+}
+
+.submit{
+    background-color: #1E4E70;
+    color: white;
+}
+.submit:hover{
+    color: #1E4E70;
+    background-color: white;
+    border: 1px solid #1E4E70;
+}
+
+.textarea{
+    height: 300px;
+    width: 100%;
+    vertical-align: auto;
+}
+.main-form{
+    margin-top: 60px;
+    color: #1E4E70;
+}
+.submit_back{
+    
+}
+.textAreaExp{
+    margin-top: 40px;
+    width: 60%;
+    height: 150px;
+}
+
+
+/*begin final resume*/
+/*redirect to each part*/
+
+.resume-part{
+    text-decoration: none !important;
+}
+.resume-part-border:hover{
+    border: 2px solid #1E4E70 !important;
+    transition: 200ms;
+}
+
+/*end*/
+
