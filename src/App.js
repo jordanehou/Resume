@@ -6,6 +6,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 //import './App.css';
 import ParentComponent from './components/parent/ParentComponent';
 //import './components/style/formStyle.css'
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 import { useState } from 'react';
 import React from 'react';

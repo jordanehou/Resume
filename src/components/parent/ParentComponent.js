@@ -2,23 +2,26 @@ import React, { useState } from 'react';
 import { Route, Routes, useNavigate, Link } from 'react-router-dom';
 import {Container} from 'react-bootstrap';
 import ContactForm from '../ContactForm';
-import ContactPrint from '../ContactPrint';
+//import ContactPrint from '../ContactPrint';
 import JobForm from '../JobForm';
-import JobPrint from '../JobPrint';
+//import JobPrint from '../JobPrint';
 import ExperienceForm from '../ExperienceForm';
-import ExperiencePrint from '../ExperiencePrint';
+//import ExperiencePrint from '../ExperiencePrint';
 import EducationForm from '../EducationForm';
-import EducationPrint from '../EducationPrint';
+//import EducationPrint from '../EducationPrint';
 import SkillForms from '../SkillForms';
-import SkillPrint from '../SkillPrint';
+//import SkillPrint from '../SkillPrint';
 import SummaryForm from '../SummaryForm';
-import SummaryPrint from '../SummaryPrint';
+//import SummaryPrint from '../SummaryPrint';
 //import TextAreaComponent from '../test/TextAreaComponent';
 import FormulaireEnfant from '../test/TextAreaComponent';
 import Print from '../test/Print';
 //import '../style/formStyle.css'
 import '../style/parentStyle.css'
-import Resume from '../finalResume/Resume';
+//Resume template
+import Resume from '../Template/Template_1/Resume';
+import ResumeTmp2 from '../Template/template_2/ResumeTmp2';
+//end
 import LanguageForm from '../LanguageForm';
 import InterestForm from '../InterestForm';
 
@@ -29,7 +32,7 @@ import TResume from '../test/TestResume';
 
 import Work from '../test2/Works';
 import ChildComponent from '../test2/ChildComponent';
-import ChildPrint from '../test2/ChildPrint';
+//import ChildPrint from '../test2/ChildPrint';
 
 import SkillPrintTest from '../test2/SkillPrintTest';
 import SkillTest from '../test2/SkillTest';
@@ -59,11 +62,11 @@ const ParentComponent = () => {
     setFormskillTest(values);
   };
 
-  const [imgtest, setImg] = useState(null);
+ /* const [imgtest, setImg] = useState(null);
   function handleImg(values){
     setImg(values);
   };
-
+*/
 
   //end test
 
@@ -155,12 +158,12 @@ const ParentComponent = () => {
   return (
     <Container>
       <div className='parent container'>
-        <div className='parent-right col-md-10'>
+        <div className='parent-right col col-md-10 col-sm-9'>
           <div className='parent-right-header'>
               resume
           </div>
         <Routes>
-          <Route path='/' element={<ContactForm onSubmit={handleFormContactSubmit}/>}/>
+          <Route path='/contact' element={<ContactForm onSubmit={handleFormContactSubmit}/>}/>
           
           <Route path='/job' element={<JobForm onSubmit={handleFormJobSubmit}/>}/>
           <Route path='/experience' element={<ExperienceForm onSubmit={handleFormWorkExpSubmit} onAdd={handleAdd} onRemove={handleRemove}/>}/>
@@ -169,11 +172,11 @@ const ParentComponent = () => {
           <Route path='/summary' element={<SummaryForm onSubmit={handleFormSummarySubmit}/>}/>
 
           <Route path='/language' element={<LanguageForm onSubmit={handleLanguage}/>}/>
-          <Route path='/interest' element={<InterestForm onSubmit={handleInterest}/>} />
+          <Route path='/interest' element={<InterestForm onSubmit={handleInterest} tmp={selectedTemplate}/>} />
 
 
-           <Route path='/resume' element={<Resume con={contactValue} job={jobValue} exp={workExpValue} educ={educationValue} skill={skillValue} sum={summaryValue}  lang={languageValue} inte={interestValue}/>}/>
-
+          <Route path='/resume' element={<Resume con={contactValue} job={jobValue} exp={workExpValue} educ={educationValue} skill={skillValue} sum={summaryValue}  lang={languageValue} inte={interestValue}/>}/>
+          <Route path='/resumetmp2' element={<ResumeTmp2 con={contactValue} job={jobValue} exp={workExpValue} educ={educationValue} skill={skillValue} sum={summaryValue}  lang={languageValue} inte={interestValue}/>}/>
 
           
           <Route path='/test' element={<FormulaireEnfant onSubmit={handleSoumettre}/>}/>
@@ -190,11 +193,11 @@ const ParentComponent = () => {
           <Route path='/et' element={<ChildComponent onAdd={handleAdd} onRemove={handleRemove} />}/>
 
 
-          <Route path='/choose' element={<TemplateSelector onSelectTemplate={handleTemplateSelection}/>}/>
+          <Route path='/' element={<TemplateSelector onSelectTemplate={handleTemplateSelection}/>}/>
           <Route path='/cv' element={<CVBuilder selectedTemplate={selectedTemplate} />}/> 
         </Routes>
         </div>
-        <div className='parent-left col-md-2'>
+        <div className='parent-left col col-md-2 col-sm-3 '>
           <div className='parent-ancre '>
 
             <div className="resume-timeline position-relative">
@@ -281,7 +284,7 @@ const ParentComponent = () => {
               <article className='resume-timeline-item position-relative pb-4'>
                 <div className="resume-timeline-item-header mb-2">
                   <div className="d-flex flex-column flex-md-row">
-                    <h3 className="resume-position-title font-weight-bold mb-1"><Link to="/tr" className='text-white lien'>test resume</Link></h3>
+                    <h3 className="resume-position-title font-weight-bold mb-1"><Link to="/resumetmp2" className='text-white lien'>test resume</Link></h3>
                   </div>
                 </div>
               </article>

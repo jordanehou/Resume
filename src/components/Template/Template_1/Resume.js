@@ -1,9 +1,9 @@
 import React, {useRef} from 'react';
 //import images from './profile.jpg';
-import test from './test.jpg';
+//import test from './test.jpg';
 import "bootstrap/dist/css/bootstrap.min.css";
-import '../../assets/css/pillar-1.css';
-import '../style/formStyle.css'
+import '../../../assets/css/pillar-1.css';
+import '../../style/formStyle.css'
 import { Link } from 'react-router-dom';
 import html2pdf from 'html2pdf.js';
 
@@ -24,7 +24,7 @@ const Resume = ({con, job,exp, educ, skill, sum, lang, inte}) => {
 		<div ref={componentRef}>
 			<article className="resume-wrapper text-center position-relative">
 				<div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
-					<Link to='/' className='resume-part '>
+					<Link to='/contact' className='resume-part '>
 						<header className="resume-header pt-4 pt-md-0 resume-part-border">
 							<div className="row" >
 								<div className="col-block col-md-auto resume-picture-holder text-center text-md-start">
@@ -36,8 +36,8 @@ const Resume = ({con, job,exp, educ, skill, sum, lang, inte}) => {
 											<h1 className="name mt-0 mb-1 text-capitalize">{con.first_name} {con.last_name}</h1>
 											<div className="title mb-2">{con.role}</div>
 											<ul className="list-unstyled">
-												<li className="mb-2"><a className="text-link resume-part" href="#"><i className="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>{con.email}</a></li>
-												<li><a className="text-link resume-part" href="#"><i className="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>{con.phone}</a></li>
+												<li className="mb-2"><a className="text-link resume-part" href="#"><i className="bi bi-envelope fa-fw me-2" data-fa-transform="grow-3"></i>{con.email}</a></li>
+												<li><a className="text-link resume-part" href="#"><i className="bi bi-mobile " data-fa-transform="grow-6"></i>{con.phone}</a></li>
 											</ul>
 										</div>
 										<div className="secondary-info col-auto mt-2">

@@ -1,7 +1,7 @@
 import {React, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Row } from 'react-bootstrap';
-function InterestForm({onSubmit}) {
+function InterestForm({onSubmit, tmp}) {
     const [form, setForm] = useState([]);
     const navigate = useNavigate ();
   
@@ -27,7 +27,13 @@ function InterestForm({onSubmit}) {
     const handleSubmit = (event) => {
       event.preventDefault();
       onSubmit(form);
-      navigate('/resume')
+      if(tmp==='1'){
+        navigate('/resume')
+      }
+      else{
+        navigate('/resumetmp2')
+      }
+        
     };
     function handleback(e){
       //navigate('/job')

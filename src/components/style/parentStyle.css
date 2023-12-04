@@ -13,7 +13,7 @@
     margin-top: 10px;
 }
 .parent-left{
-    width: 30%;
+
     float: left;
     background-color: #1E4E70;
     color: white;
@@ -60,11 +60,10 @@ article{
 }
 
 .parent-right{
-    width: 70%;
     float: right;
     background-color: white;
     height: 100%;
-
+    margin-left: 130px;
     /*begin let an empty div fill hieght*/
     top: 0;
     right: 0;

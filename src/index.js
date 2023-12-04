@@ -6,6 +6,8 @@ import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
+//import 'font-awesome/css/font-awesome.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 // Bootstrap Bundle JS
 //import "bootstrap/dist/js/bootstrap.bundle.min";
 //import 'bootstrap/dist/css/bootstrap.min.css'; 
