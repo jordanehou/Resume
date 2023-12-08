@@ -8,6 +8,20 @@
  profile
  icon-holder
  sidebar-wrappe
+ container-block
+ profile-container
+ section
+ summary-section
+ profile
+ rounded-circle
+ item
+ email
+ list-unstyled contact-list
+ contact-container
+ section
+ skills-section section
+ level-title
+ skillset
 */
 body {
   font-family: "Roboto", sans-serif;
@@ -44,7 +58,7 @@ p {
 
 .wrapper {
   background: #42A8C0;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -52,10 +66,11 @@ p {
 
 .sidebar-wrapper {
   background: #42A8C0;
-  position: absolute;
+  position: relative;
   right: 0;
-  width: 240px;
+
   height: 100%;
+
   min-height: 800px;
   color: #fff;
   padding-bottom: 30px;
@@ -65,10 +80,16 @@ p {
   color: #fff;
 }
 .sidebar-wrapper .profile-container {
-  padding: 30px;
+
+
+
   background: rgba(0, 0, 0, 0.2);
   text-align: center;
   color: #fff;
+  right: 0;
+  left: 0;
+
+
 }
 .sidebar-wrapper .name {
   font-size: 20px;
@@ -101,7 +122,7 @@ p {
   font-size: 14px;
 }
 .sidebar-wrapper .container-block {
-  padding: 30px;
+  padding: 10px;
 }
 .sidebar-wrapper .container-block-title {
   text-transform: uppercase;
@@ -157,9 +178,11 @@ p {
 
 .main-wrapper {
   background: #fff;
-  padding: 60px;
-  min-height: 900px;
-  padding-right: 300px;
+  padding: 30px;
+
+  left: 0;
+  min-height: 800px;
+  padding-right: 30px;
 }
 .main-wrapper .section-title {
   text-transform: uppercase;
@@ -291,3 +314,4 @@ p {
     margin-bottom: 0;
   }
 }
+

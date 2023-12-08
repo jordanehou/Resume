@@ -36,8 +36,8 @@ const Resume = ({con, job,exp, educ, skill, sum, lang, inte}) => {
 											<h1 className="name mt-0 mb-1 text-capitalize">{con.first_name} {con.last_name}</h1>
 											<div className="title mb-2">{con.role}</div>
 											<ul className="list-unstyled">
-												<li className="mb-2"><a className="text-link resume-part" href="#"><i className="bi bi-envelope fa-fw me-2" data-fa-transform="grow-3"></i>{con.email}</a></li>
-												<li><a className="text-link resume-part" href="#"><i className="bi bi-mobile " data-fa-transform="grow-6"></i>{con.phone}</a></li>
+												{con.email &&<li className="mb-2"><a className="text-link resume-part" href="#"> <i className="bi bi-envelope fa-fw me-2" data-fa-transform="grow-3"></i>{con.email}</a></li>}
+												{con.phone &&<li><a className="text-link resume-part" href="#"> <i className="bi bi-phone" data-fa-transform="grow-6"></i> {con.phone} </a></li>}
 											</ul>
 										</div>
 										<div className="secondary-info col-auto mt-2">

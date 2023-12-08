@@ -155,6 +155,18 @@ const ParentComponent = () => {
     setSelectedTemplate(template);
   };
 
+  function ResumeLink({template}){
+    if(template==='1'){
+      return(<Link to="/resume" className='text-white lien'>resume</Link>)
+    }
+    else{
+      return(
+        <Link to="/resumetmp2" className='text-white lien'>resume</Link>
+      )
+    }
+      
+  }
+
   return (
     <Container>
       <div className='parent container'>
@@ -249,16 +261,17 @@ const ParentComponent = () => {
                 </div>
               </article>
             </div>
-
-            <div className="resume-timeline position-relative">
-              <article className='resume-timeline-item position-relative pb-4'>
-                <div className="resume-timeline-item-header mb-2">
-                  <div className="d-flex flex-column flex-md-row">
-                    <h3 className="resume-position-title font-weight-bold mb-1"><Link to="/resume" className='text-white lien'>resume</Link></h3>
+            {selectedTemplate &&
+              <div className="resume-timeline position-relative">
+                <article className='resume-timeline-item position-relative pb-4'>
+                  <div className="resume-timeline-item-header mb-2">
+                    <div className="d-flex flex-column flex-md-row">
+                      <h3 className="resume-position-title font-weight-bold mb-1"><ResumeLink template={selectedTemplate}/></h3>
+                    </div>
                   </div>
-                </div>
-              </article>
-            </div>
+                </article>
+              </div>
+            }
 
             <div className="resume-timeline position-relative">
               <article className='resume-timeline-item position-relative pb-4'>
@@ -274,7 +287,7 @@ const ParentComponent = () => {
               <article className='resume-timeline-item position-relative pb-4'>
                 <div className="resume-timeline-item-header mb-2">
                   <div className="d-flex flex-column flex-md-row">
-                    <h3 className="resume-position-title font-weight-bold mb-1"><Link to="/choose" className='text-white lien'>choose cv</Link></h3>
+                    <h3 className="resume-position-title font-weight-bold mb-1"><Link to="/" className='text-white lien'>choose cv</Link></h3>
                   </div>
                 </div>
               </article>
